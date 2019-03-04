@@ -8,8 +8,9 @@ export type Query = {
 export const allPosts = `
 query allPosts {
     allPosts {
-        id
-        message
+        id,
+        message,
+        created_at,
         author {
             id,
             username
